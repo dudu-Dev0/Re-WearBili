@@ -1,0 +1,4 @@
+[submodule "Bilibili-Kotlin-SDK"]
+	path = libs/Bilibili-Kotlin-SDK
+	url = https://github.com/SpaceXC/Bilibili-Kotlin-SDK.git
+	branch = main
