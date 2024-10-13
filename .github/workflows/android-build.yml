@@ -25,7 +25,7 @@ jobs:
     - name: Clone Submodules
       run: git submodule update --init --recursive
     - name: Build with Gradle
-      run: ./gradlew assemble
+      run: ./gradlew assembleDebug
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
