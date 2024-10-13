@@ -22,6 +22,8 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+    - name: Add Submodules
+      run: git submodule add https://github.com/SpaceXC/Bilibili-Kotlin-SDK.git libs/Bilibili-Kotlin-SDK
     - name: Clone Submodules
       run: git submodule update --init --recursive
     - name: Build with Gradle
