@@ -1,4 +1,4 @@
-name: Android CI
+name: Build Re:WearBili
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
     - name: Clone Submodules
       run: git submodule update --init --recursive
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew assemble
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
