@@ -25,9 +25,9 @@ jobs:
     - name: Clone Submodules
       run: git submodule update --init --recursive
     - name: Build with Gradle
-      run: ./gradlew assembleDebug
+      run: ./gradlew assembleRelease
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Re-WearBili
-        path: app/build/outputs/apk/debug
+        path: app/build/outputs/apk/release
