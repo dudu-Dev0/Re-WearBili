@@ -88,7 +88,7 @@ fun SharedTransitionScope.VideoInformationScreen(
     ) {
         HorizontalPager(state = state) {
             when (it) {
-                0 -> if (isRound()) {
+                0 -> if (false) {
                     VideoBasicInformationScreen(
                         state = videoInformationViewModel.state,
                         navController = navController,
